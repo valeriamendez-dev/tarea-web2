@@ -1,0 +1,102 @@
+body {
+    /* Aplicamos 'Lato' a todo el sitio */
+    font-family: 'Lato', sans-serif;
+    background-color: #fcf8f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#title, h3 {
+    /* Aplicamos 'Playfair Display' solo a los títulos para que resalten */
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.navbar {
+    background-color: #4b3d25;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contenedor-platillos {
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+
+.detalles {
+    align-items: stretch; /* Estira el contenido para que todo calce perfecto */
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.detalles:hover {
+    transform: translateY(-5px); 
+}
+
+
+.detalles img {
+    width: 300px;
+    height: auto; /* Permite que la imagen dicte su altura */
+    object-fit: cover;
+    
+    /* EL TRUCO MÁGICO: */
+    display: block; 
+    /* Al decir 'display: block', la imagen deja de comportarse como texto 
+       y elimina ese espacio vacío que sobraba abajo. */
+}
+
+.info {
+    padding: 20px;
+}
+
+.precio {
+    color: #bc6c25; 
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #4b3d25; 
+    color: white; 
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+    .detalles {
+        flex-direction: column; 
+    }
+    .detalles img {
+        width: 100%; 
+    }
+}
