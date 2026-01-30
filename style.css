@@ -1,5 +1,5 @@
 body {
-    /* Aplicamos 'Lato' a todo el sitio */
+    
     font-family: 'Lato', sans-serif;
     background-color: #fcf8f2;
     color: #333;
@@ -8,7 +8,7 @@ body {
 }
 
 #title, h3 {
-    /* Aplicamos 'Playfair Display' solo a los títulos para que resalten */
+    
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -50,7 +50,7 @@ body {
 
 
 .detalles {
-    align-items: stretch; /* Estira el contenido para que todo calce perfecto */
+    align-items: stretch;/
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -65,13 +65,10 @@ body {
 
 .detalles img {
     width: 300px;
-    height: auto; /* Permite que la imagen dicte su altura */
+    height: auto; 
     object-fit: cover;
-    
-    /* EL TRUCO MÁGICO: */
     display: block; 
-    /* Al decir 'display: block', la imagen deja de comportarse como texto 
-       y elimina ese espacio vacío que sobraba abajo. */
+    
 }
 
 .info {
@@ -99,4 +96,5 @@ footer {
     .detalles img {
         width: 100%; 
     }
+
 }
